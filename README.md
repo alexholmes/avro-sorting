@@ -19,5 +19,5 @@ To get started, simply:
 
 Read the accompanying blog articles:
 
-* Avro built-in sorting
+* [Avro built-in sorting](http://grepalex.com/2013/05/28/avro-builtin-sorting/)
 

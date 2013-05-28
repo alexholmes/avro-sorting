@@ -1,0 +1,9 @@
+{"type": "record", "name": "com.alexholmes.avro.WeatherNoIgnore",
+ "doc": "A weather reading.",
+ "fields": [
+     {"name": "station", "type": "string"},
+     {"name": "time", "type": "long"},
+     {"name": "temp", "type": "int"},
+     {"name": "counter", "type": "int", "default": 0}
+ ]
+}

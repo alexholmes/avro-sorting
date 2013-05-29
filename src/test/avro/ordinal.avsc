@@ -1,0 +1,6 @@
+{"type": "record", "name": "com.alexholmes.avro.sort.basic.Ordinal",
+ "fields": [ {"name": "cfield1", "type": "int"},
+  {"name": "bfield2", "type": "int"},
+  {"name": "afield3", "type": "int"}
+  ]
+}

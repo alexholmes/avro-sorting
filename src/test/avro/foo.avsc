@@ -1,0 +1,11 @@
+{"type": "record", "name": "com.alexholmes.avro.sort.avrokey.Foo",
+ "fields": [ {"name": "foo1", "type": "int"},
+  {"name": "foo2", "type": "string"},
+  {"name": "foo3", "type": {
+      "type": "record", "name": "com.alexholmes.avro.sort.avrokey.Bar",
+       "fields": [
+        {"name": "bar1", "type": "int"},
+        {"name": "bar2", "type": "int"}
+      ]}}
+  ]
+}

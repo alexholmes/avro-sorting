@@ -68,7 +68,7 @@ public class AvroSort {
             gen.writeEndArray();
             gen.writeEndObject();
             gen.flush();
-            System.out.println("Created JSON " + writer.toString());
+            //System.out.println("Created JSON " + writer.toString());
             return writer.toString();
         } catch (IOException e) {
             throw new AvroRuntimeException(e);
@@ -89,7 +89,7 @@ public class AvroSort {
 
                 Schema schema = new Schema.Parser().parse(schemaNode.get("schema").getValueAsText());
 
-                System.out.println("Got schema: " + schema + " json: " + schemaNode.get("schema").getValueAsText());
+                //System.out.println("Got schema: " + schema + " json: " + schemaNode.get("schema").getValueAsText());
 
 
                 JsonNode fieldsNodes = schemaNode.get("fields");
@@ -191,7 +191,7 @@ public class AvroSort {
                 mSchema = AvroJob.getMapOutputKeySchema(conf);
 
                 fetcher = new ConfigFieldFetcher(conf, getConfigName());
-                System.out.println(getConfigName() + " fields: " + fetcher);
+                //System.out.println(getConfigName() + " fields: " + fetcher);
 
 //                deserializer = new AvroKeyDeserializer(mSchema, mSchema, conf.getClassLoader());
             }
